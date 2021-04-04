@@ -50,37 +50,6 @@
       },
     ],
   }
-
-  const projects = [
-    {
-      name: 'todo',
-      link: 'https://vue-sandbox-todo.now.sh/',
-      github: 'https://github.com/themetronome/v-sandbox-todo',
-      desc: 'simple vue todo',
-      tags: ['vue'],
-    },
-    {
-      name: 'challengify',
-      link: 'https://challengify.now.sh/',
-      github: 'https://github.com/themetronome/challengify',
-      desc: '30-day challange app',
-      tags: ['react'],
-    },
-    {
-      name: 'pizzahh',
-      link: 'https://pizzahh.now.sh/',
-      github: 'https://github.com/themetronome/pizzahh',
-      desc: 'pizza restaurant site',
-      tags: ['react', 'styled components'],
-    },
-    {
-      name: 'sneakerbox',
-      link: 'https://sneakerbox.now.sh/',
-      github: 'https://github.com/themetronome/sneakerbox',
-      desc: 'sneakershop',
-      tags: ['react', 'react-router', 'redux', 'redux-thunk'],
-    },
-  ]
 </script>
 
 <container>
@@ -107,10 +76,6 @@
           <li class="skill-item">{skill}</li>
         {/each}
       </ul>
-    </block>
-    <block>
-      <h3 class="title">projects</h3>
-      <Projects {projects} />
     </block>
     <block>
       <h3 class="title">certificates</h3>
