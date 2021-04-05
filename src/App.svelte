@@ -9,14 +9,12 @@
   const ghCF2 = './static/GrasshopperCodingFundamentalsIICertificate.pdf'
   const ghCF4 = './static/GrasshopperIntrotoInterviewingCertificate.pdf'
   const skills = [
-    'javascript(es6+), typescript',
+    'javascript, typescript',
     'react',
-    'redux',
-    'vue.js',
-    'scss, styled-components, PostCSS',
+    'node.js',
+    'scss, styled-components',
     'webpack, rollup',
     'git',
-    'linux',
   ]
 
   const social = [
