@@ -1,20 +1,11 @@
 <script>
   import List from './List.svelte'
-  import Certificates from './Certificates.svelte'
-  import Projects from './Projects.svelte'
   import Hand from './Hand.svelte'
 
   const avatar = './static/avatar.jpg'
-  const ghCF = './static/GrasshopperCodingFundamentalsCertificate.pdf'
-  const ghCF2 = './static/GrasshopperCodingFundamentalsIICertificate.pdf'
-  const ghCF4 = './static/GrasshopperIntrotoInterviewingCertificate.pdf'
   const skills = [
-    'javascript, typescript',
-    'react',
-    'node.js',
-    'scss, styled-components',
-    'webpack, rollup',
-    'git',
+    'javascript',
+    'typescript'
   ]
 
   const social = [
@@ -23,31 +14,6 @@
     { name: 'vasyayp@yandex.ru', link: 'mailto:vasyayp@yandex.ru' },
   ]
 
-  const courses = {
-    fundamentals: [
-      {
-        name: 'js coding fundamentals',
-        link: ghCF,
-        year: '2019',
-        company: 'google',
-      },
-      {
-        name: 'js coding fundamentals',
-        link: ghCF2,
-        year: '2019',
-        company: 'google',
-      },
-    ],
-    other: [
-      {
-        name:
-          'intro to interviewing. at the end of this course i solved challenging google interview question.',
-        link: ghCF4,
-        year: '2019',
-        company: 'google',
-      },
-    ],
-  }
 </script>
 
 <container>
@@ -61,7 +27,7 @@
 
     <div class="centered">
       <h1>Vladislav Bukatov</h1>
-      <h2 class="position">frontend engineer</h2>
+      <h2 class="position">web engineer</h2>
     </div>
     <block>
       <h3 class="title">links</h3>
@@ -74,10 +40,6 @@
           <li class="skill-item">{skill}</li>
         {/each}
       </ul>
-    </block>
-    <block>
-      <h3 class="title">certificates</h3>
-      <Certificates {courses} />
     </block>
   </div>
 </container>
